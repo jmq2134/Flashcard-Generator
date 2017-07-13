@@ -3,6 +3,8 @@ var inquirer = require('inquirer');
 
 var CreateCard = new BasicCard();
 
+this doesn't work yet - more advanced 
+
 inquirer.prompt([
         // Begin by finding cardType either BasicCard or ClozeCard   
         {

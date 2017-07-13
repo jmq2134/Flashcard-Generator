@@ -1,5 +1,6 @@
 // Require fs
 var fs = require("fs");
+var prettyjson = require('prettyjson');
 
 // Create ClozeCard
 function ClozeCard(text, cloze) {
@@ -25,7 +26,9 @@ function ClozeCard(text, cloze) {
             }
         });
 
-            console.log(JSON.stringify(output));
+        // console.log(JSON.stringify(output));
+        console.log(prettyjson.render(output, { keysColor: 'blue', stringColor: 'white' }));
+
     };
 }
 

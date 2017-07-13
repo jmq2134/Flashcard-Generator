@@ -1,5 +1,6 @@
 // Require fs
 var fs = require("fs");
+var prettyjson = require('prettyjson');
 
 // Create BasicCard
 var BasicCard = function(front, back) {
@@ -22,7 +23,9 @@ var BasicCard = function(front, back) {
             }
         });
 
-        console.log(JSON.stringify(output));
+        // console.log(JSON.stringify(output));
+        console.log(prettyjson.render(output, { keysColor: 'blue', stringColor: 'white' }));
+
     };
 }
 
